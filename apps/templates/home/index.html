@@ -12,17 +12,16 @@
         <div class="card card-stats">
           <div class="card-header card-header-warning card-header-icon">
             <div class="card-icon">
-              <i class="material-icons">content_copy</i>
+              <i class="material-icons">numbers</i>
             </div>
-            <p class="card-category">Used Space</p>
-            <h3 class="card-title">49/50
-              <small>GB</small>
+            <p class="card-category"># of subscriptions</p>
+            <h3 class="card-title">XXX
             </h3>
           </div>
           <div class="card-footer">
             <div class="stats">
-              <i class="material-icons text-danger">warning</i>
-              <a href="#pablo">Get More Space...</a>
+              <i class="material-icons">library_books</i>
+              <a href="/ui-tables.html">Manage</a>
             </div>
           </div>
         </div>
@@ -31,14 +30,15 @@
         <div class="card card-stats">
           <div class="card-header card-header-success card-header-icon">
             <div class="card-icon">
-              <i class="material-icons">store</i>
+              <i class="material-icons">euro_symbol</i>
             </div>
-            <p class="card-category">Revenue</p>
-            <h3 class="card-title">$34,245</h3>
+            <p class="card-category">Total Monthly cost</p>
+            <h3 class="card-title">€123,00</h3>
           </div>
           <div class="card-footer">
             <div class="stats">
-              <i class="material-icons">date_range</i> Last 24 Hours
+              <i class="material-icons">label</i>
+              <a href="#">Learn how to save...</a>
             </div>
           </div>
         </div>
@@ -47,14 +47,15 @@
         <div class="card card-stats">
           <div class="card-header card-header-danger card-header-icon">
             <div class="card-icon">
-              <i class="material-icons">info_outline</i>
+              <i class="material-icons">delete</i>
             </div>
-            <p class="card-category">Fixed Issues</p>
-            <h3 class="card-title">75</h3>
+            <p class="card-category">Alternatives</p>
+            <h3 class="card-title">3</h3>
           </div>
           <div class="card-footer">
             <div class="stats">
-              <i class="material-icons">local_offer</i> Tracked from Github
+              <i class="material-icons">local_offer</i>
+              <a href="#">Save</a>
             </div>
           </div>
         </div>
@@ -63,38 +64,73 @@
         <div class="card card-stats">
           <div class="card-header card-header-info card-header-icon">
             <div class="card-icon">
-              <i class="fa fa-twitter"></i>
+              <i class="material-icons">smart_toy</i>
             </div>
-            <p class="card-category">Followers</p>
-            <h3 class="card-title">+245</h3>
+            <p class="card-category">AI Agent</p>
+            <h3 class="card-title">Beep Bop</h3>
           </div>
           <div class="card-footer">
             <div class="stats">
-              <i class="material-icons">update</i> Just Updated
+              <i class="material-icons">contract_delete</i> Automate Subscriptions
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
-        <div class="card card-chart">
-          <div class="card-header card-header-success">
-            <div class="ct-chart" id="dailySalesChart"></div>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Daily Sales</h4>
-            <p class="card-category">
-              <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-info card-header-icon">
+            <div class="card-icon" style="background:rgba(229, 9, 20, 0); padding: 0px;">
+              <img src="/static/assets/img/netflix.png" alt="netflix" style="object-fit: fill; width: 75px; height: 75px;">
+            </div>
+            <p class="card-category">Netflix</p>
+            <h3 class="card-title">Premium</h3>
+            <h3 class="card-title">€18,99</h3>
           </div>
           <div class="card-footer">
             <div class="stats">
-              <i class="material-icons">access_time</i> updated 4 minutes ago
+              <i class="material-icons">contract_delete</i> Automate Subscriptions
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-info card-header-icon">
+            <div class="card-icon" style="background:rgba(229, 9, 20, 0); padding: 0px;">
+              <img src="/static/assets/img/amazon.png" alt="amazon" style="object-fit: fill; width: 75px; height: 75px;">
+            </div>
+            <p class="card-category">Amazon</p>
+            <h3 class="card-title">Prime Video</h3>
+            <h3 class="card-title">€2,99</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">contract_delete</i> Automate Subscriptions
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-info card-header-icon">
+            <div class="card-icon" style="background:rgba(229, 9, 20, 0); padding: 0px;">
+              <img src="/static/assets/img/disney.png" alt="disney" style="object-fit: fill; width: 75px; height: 75px;">
+            </div>
+            <p class="card-category">Disney</p>
+            <h3 class="card-title">Plus</h3>
+            <h3 class="card-title">€12,99</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">contract_delete</i> Automate Subscriptions
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% comment %} <div class="col-md-4">
         <div class="card card-chart">
           <div class="card-header card-header-warning">
             <div class="ct-chart" id="websiteViewsChart"></div>
@@ -125,10 +161,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> {% endcomment %}
     </div>
     <div class="row">
-      <div class="col-lg-6 col-md-12">
+     {% comment %}  <div class="col-lg-6 col-md-12">
         <div class="card">
           <div class="card-header card-header-tabs card-header-primary">
             <div class="nav-tabs-navigation">
@@ -416,7 +452,7 @@
             </table>
           </div>
         </div>
-      </div>
+      </div> {% endcomment %}
     </div>
 
 {% endblock content %}
