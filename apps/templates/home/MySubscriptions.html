@@ -1,0 +1,49 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} My Subscriptions {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-primary" style="background: blue;">
+                <h4 class="card-title">Active Subscriptions</h4>
+                <p class="card-category">This view contains your active subscriptions</p>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for subscription in user_subscriptions %}
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header card-header-info card-header-icon">
+                                <div class="card-icon" style="background:rgba(229, 9, 20, 0); padding: 0px;">
+                                    <img src="{% static 'assets/img/netflix.png' %}" alt="{{ subscription.subscription.name }}" style="object-fit: fill; width: 75px; height: 75px;">
+                                </div>
+                                <p class="card-category">{{ subscription.subscription.name }}</p>
+                                <h3 class="card-title">{{ subscription.subscription.category.name }}</h3>
+                                <h3 class="card-title">€{{ subscription.subscription.cost }}</h3>
+                            </div>
+                            <div class="card-footer">
+                                <div class="stats">
+                                    <a href="{% url 'edit_subscription' subscription.id %}" class="btn btn-primary">
+                                        <i class="material-icons">edit</i> Manage
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <p>No subscriptions found.</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

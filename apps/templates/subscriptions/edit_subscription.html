@@ -1,0 +1,16 @@
+<!-- filepath: c:\Users\Yoni\Documents\Dev\SubSaverMaterialDash\material-dashboard-django\apps\templates\subscriptions\edit_subscription.html -->
+{% extends "layouts/base.html" %}
+
+{% block title %} Edit Subscription {% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Edit Subscription: {{ subscription.subscription.name }}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Save Changes</button>
+        <a href="{% url 'my_subscriptions' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}

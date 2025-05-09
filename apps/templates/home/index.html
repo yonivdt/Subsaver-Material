@@ -15,8 +15,7 @@
               <i class="material-icons">numbers</i>
             </div>
             <p class="card-category"># of subscriptions</p>
-            <h3 class="card-title">XXX
-            </h3>
+            <h3 class="card-title">{{ total_active_subscriptions }}</h3>
           </div>
           <div class="card-footer">
             <div class="stats">
@@ -32,8 +31,8 @@
             <div class="card-icon">
               <i class="material-icons">euro_symbol</i>
             </div>
-            <p class="card-category">Total Monthly cost</p>
-            <h3 class="card-title">€123,00</h3>
+            <p class="card-category">Total Monthly Cost</p>
+            <h3 class="card-title">€{{ total_monthly_cost|floatformat:2 }}</h3>
           </div>
           <div class="card-footer">
             <div class="stats">
